@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira-10:medium:antialias=true:autohint=true";
-static int borderpx = 30;
+static char *font = "Comic Mono:pixelsize=14:antialias=true:autohint=true";
+static int borderpx = 15;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -16,7 +16,7 @@ static int borderpx = 30;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/usr/bin/zsh";
+static char *shell = "zsh";
 char *utmp = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
@@ -85,30 +85,30 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#282828",
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
+	"#100f10",
+	"#ff8059",
+	"#44bc44",
+	"#d0bc00",
+	"#2fafff",
+	"#feacd0",
+	"#00d3d0",
+	"#e0e6f0",
 
 	/* 8 bright colors */
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
+	"#535353",
+	"#ef8b50",
+	"#70b900",
+	"#c0c530",
+	"#79a8ff",
+	"#f78fe7",
+	"#4ae2f0",
+	"#a8a8a8",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#ebdbb2", /* foreground */
-	"#161819", /* background */
+	"#ffffff", /* foreground */
+	"#000000", /* background */
 };
 
 
